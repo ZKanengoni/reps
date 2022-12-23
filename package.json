@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "tsx ./lib/migrator.ts"
   },
   "dependencies": {
     "@next/font": "13.0.7",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@types/pg": "^8.6.5",
-    "@types/pg-cursor": "^2.7.0"
+    "@types/pg-cursor": "^2.7.0",
+    "tsx": "^3.12.1"
   }
 }
