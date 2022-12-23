@@ -1,9 +1,8 @@
-import { Generated } from 'kysely';
-import { NextApiRequest, NextApiResponse } from 'next';
-import { fetchUsers } from '../../lib/db';
+import { NextApiRequest, NextApiResponse } from "next";
+import { fetchUsers } from "../../lib/queries";
 
 type Data = {
-  id: Generated<number>;
+  id: number;
   name: string;
   age: number;
   weight: number;
